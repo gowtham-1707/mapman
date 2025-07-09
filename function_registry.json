@@ -1,0 +1,148 @@
+[
+  {
+    "function": "get_admin_boundary",
+    "level": "low",
+    "class": "flood hazard",
+    "description": "Fetch administrative boundary geometry using FAO/GAUL dataset for given place and level.",
+    "arguments": {
+      "place_name": "e.g. 'kerala'",
+      "level": "'country', 'state', or 'district'"
+    },
+    "output": "FeatureCollection of boundaries"
+  },
+  {
+    "function": "get_thresholds",
+    "level": "low",
+    "class": "flood hazard",
+    "description": "Return flood risk thresholds based on administrative level.",
+    "arguments": {
+      "level": "'country', 'state', or 'district'"
+    },
+    "output": "Dictionary of thresholds"
+  },
+  {
+    "function": "get_recent_surface_water",
+    "level": "low",
+    "class": "flood hazard",
+    "description": "Generate surface water mask from Sentinel-1 VV backscatter values.",
+    "arguments": {
+      "aoi": "Area of interest geometry",
+      "start_date": "Start date in 'YYYY-MM-DD'",
+      "end_date": "End date in 'YYYY-MM-DD'",
+      "vv_threshold": "Threshold in dB for water detection"
+    },
+    "output": "Masked image of recent surface water"
+  },
+  {
+    "function": "get_permanent_water_mask",
+    "level": "low",
+    "class": "flood hazard",
+    "description": "Create permanent water body mask using JRC Global Surface Water dataset.",
+    "arguments": {
+      "aoi": "Area of interest geometry",
+      "occurrence_threshold": "Occurrence % threshold to consider water"
+    },
+    "output": "Masked image of permanent water"
+  },
+  {
+    "function": "compute_flood_risk_vector",
+    "level": "low",
+    "class": "flood hazard",
+    "description": "Compute flood risk polygons from permanent water or Sentinel-1 imagery.",
+    "arguments": {
+      "boundary": "Boundary FeatureCollection",
+      "start_date": "Start date in 'YYYY-MM-DD'",
+      "end_date": "End date in 'YYYY-MM-DD'",
+      "level": "'country', 'state', or 'district'"
+    },
+    "output": "FeatureCollection of flood risk polygons"
+  },
+  {
+    "function": "get_low_elevation_mask",
+    "level": "low",
+    "class": "flood hazard",
+    "description": "Mask for low elevation regions using SRTM DEM (e.g., for identifying flood-prone lowlands).",
+    "arguments": {
+      "aoi": "Area of interest geometry",
+      "threshold": "Elevation threshold in meters"
+    },
+    "output": "Masked image of low elevation"
+  },
+  {
+    "function": "Final_flood_risk",
+    "level": "high",
+    "class": "flood hazard",
+    "description": "Generate interactive flood risk map for a given place and level.",
+    "arguments": {
+      "place_name": "e.g. 'kerala'",
+      "level": "'country', 'state', or 'district' only allowed",
+      "start_date": "Start date in 'YYYY-MM-DD'",
+      "end_date": "End date in 'YYYY-MM-DD'"
+    },
+    "output": "Interactive flood risk map"
+  },
+  {
+    "function": "get_admin_boundary",
+    "level": "low",
+    "class": "land cover",
+    "description": "Fetch administrative boundary geometry using FAO/GAUL dataset for given place and level.",
+    "arguments": {
+      "place_name": "e.g. 'kerala'",
+      "level": "'country', 'state', or 'district'"
+    },
+    "output": "FeatureCollection of boundaries"
+  },
+  {
+    "function": "get_landcover_thresholds",
+    "level": "low",
+    "class": "land cover",
+    "description": "Return land cover class thresholds and scale for given admin level.",
+    "arguments": {
+      "level": "'country', 'state', or 'district'"
+    },
+    "output": "Dictionary with classes and scale"
+  },
+  {
+    "function": "get_landcover_mask",
+    "level": "low",
+    "class": "land cover",
+    "description": "Mask ESA WorldCover land cover image with selected classes.",
+    "arguments": {
+      "aoi": "Area of interest geometry",
+      "classes": "List of ESA land cover class codes"
+    },
+    "output": "Masked ESA land cover image"
+  },
+  {
+    "function": "get_visualization_params",
+    "level": "low",
+    "class": "land cover",
+    "description": "Return visualization parameters including palette and range for land cover classes.",
+    "arguments": {
+      "classes": "List of ESA land cover class codes"
+    },
+    "output": "Visualization dictionary"
+  },
+  {
+    "function": "add_legend",
+    "level": "low",
+    "class": "land cover",
+    "description": "Add a clickable land cover legend to the map.",
+    "arguments": {
+      "Map": "geemap Map object",
+      "classes": "List of ESA land cover class codes"
+    },
+    "output": "Map with legend added"
+  },
+  {
+    "function": "Final_land_cover",
+    "level": "high",
+    "class": "land cover",
+    "description": "Generate interactive map of land cover classes for a given place and level (state,district,country).",
+    "arguments": {
+      "place_name": "e.g. 'kerala'",
+      "level": "'country', 'state', or 'district'"
+    },
+    "output": "Interactive land cover map"
+  }
+]
