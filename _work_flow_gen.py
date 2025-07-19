@@ -28,7 +28,7 @@ def generate_workflow(user_prompt: str):
     except json.JSONDecodeError as e:
         raise ValueError(f"Invalid JSON from LLM: {content}") from e
 
-# print(generate_workflow("land cover map of Chennai "))
+print(generate_workflow("land cover map of Chennai with low level of elevation"))
 
 
     
