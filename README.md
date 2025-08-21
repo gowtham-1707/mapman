@@ -21,14 +21,7 @@ It allows users to visualize, interact with, and manage data through an intuitiv
 - **Others:** REST APIs, Environment configs (`.env`)  
 
 ---
-
-## 📦 Installation & Setup
-
-Clone the repository:
-```bash
-git clone https://github.com/gowtham-1707/mapman.git
-cd mapman
-📖 Usage
+## 📖 Usage
 
 Open the app in your browser.
 
@@ -36,13 +29,13 @@ Interact with the map to create/manage workflows.
 
 Save, update, and visualize your data dynamically.
 
-📸 Screenshots / Demo
+## 📸 Screenshots / Demo
 
 Add screenshots or a demo GIF of the app here
 
 ![App Screenshot](docs/screenshot.png)
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome!
 
@@ -54,15 +47,21 @@ Commit changes (git commit -m 'Add feature')
 
 Push to branch and create a Pull Request
 
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License – see the LICENSE
  file for details.
 
-📬 Contact
+## 📬 Contact
 
 👤 Gowtham K
 
 GitHub: gowtham-1707
 
-Email: (add your email if you want)
+Email: (kumarrajagowtham@gmail.com)
+## 📦 Installation & Setup
+
+Clone the repository:
+```bash
+git clone https://github.com/gowtham-1707/mapman.git
+cd mapman
