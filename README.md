@@ -1,27 +1,27 @@
-# 🌍 MapMan
+# MapMan
 
 **MapMan** is a lightweight web application for interactive mapping and workflow management.  
 It allows users to visualize, interact with, and manage data through an intuitive web-based interface.  
 
 ---
 
-## 🚀 Features
-- 📌 Interactive map-based interface  
-- ⚡ Fast and responsive web app  
-- 🔧 Customizable workflows  
-- 🗂 Data visualization and management  
-- 🛡️ Secure sandboxed environment for execution  
+## Features
+- Interactive map-based interface  
+- Fast and responsive web app  
+- Customizable workflows  
+- Data visualization and management  
+- Secure sandboxed environment for execution  
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Frontend:** HTML, CSS, JavaScript (or React if applicable)  
 - **Backend:** Python (Flask / FastAPI / Django)  
 - **Database:** SQLite / PostgreSQL (if used)  
 - **Others:** REST APIs, Environment configs (`.env`)  
 
 ---
-## 📖 Usage
+## Usage
 
 Open the app in your browser.
 
@@ -29,13 +29,13 @@ Interact with the map to create/manage workflows.
 
 Save, update, and visualize your data dynamically.
 
-## 📸 Screenshots / Demo
+## Screenshots / Demo
 
 Add screenshots or a demo GIF of the app here
 
 ![App Screenshot](docs/screenshot.png)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome!
 
@@ -47,19 +47,19 @@ Commit changes (git commit -m 'Add feature')
 
 Push to branch and create a Pull Request
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License – see the LICENSE
  file for details.
 
-## 📬 Contact
+## Contact
 
-👤 Gowtham K
+Gowtham K
 
 GitHub: gowtham-1707
 
 Email: (kumarrajagowtham@gmail.com)
-## 📦 Installation & Setup
+## Installation & Setup
 
 Clone the repository:
 ```bash
