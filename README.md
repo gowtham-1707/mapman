@@ -31,7 +31,6 @@ Save, update, and visualize your data dynamically.
 
 ## Screenshots / Demo
 
-Add screenshots or a demo GIF of the app here
 
 ![App Screenshot](docs/screenshot.png)
 
